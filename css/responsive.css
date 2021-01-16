@@ -1,0 +1,180 @@
+@media only screen and (max-width:792px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-list li{
+        margin-bottom: 10px;
+    }
+    .navbar{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+        height: 478px;
+    }
+    .background{
+        background-size: cover;
+    }
+    #search{
+        width: 70%;
+        margin: 5px auto;
+    }
+    .right-nav{
+        width: 60%;
+        text-align: center;
+    }
+    .btn{
+        position: relative;
+        
+        /* position: static; */
+     
+        
+        
+    }
+    /* .btn-sm{
+        padding: 1px;
+        vertical-align: middle;
+        justify-content: center;
+        margin: auto;
+        font-size: 11px;
+        border-radius: 5px;
+        border: 1.5px solid white; */
+    /* } */
+    .btn-sm{
+    
+        padding: 4px;
+        vertical-align: middle;
+        margin: 10px 27px 10px 24px;
+        font-size: 14px;
+        border-radius: 12px;
+        border: 2px solid white;
+        position: relative;
+        
+    }
+    .btn-sm:hover{
+        padding: 4px;
+        vertical-align: middle;
+        margin: 10px 27px 10px 24px;
+        font-size: 14px;
+        border-radius: 12px;
+        border: 2px solid white;
+    }
+    .logo{
+        width: 22%;
+    }
+    .logo img{
+        
+        margin: 4px auto;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 58px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .first-section{
+        width: 100%;
+    }
+    .background{
+        
+        background: rgba(0, 0, 0, 0.7) url("../img/background2.jpg");
+        background-size: cover;
+        background-blend-mode:normal;
+        
+        
+        width: 100%;
+    }
+    .section{
+        /* height: 20%; */
+        flex-direction: column-reverse;
+        margin-top: 85px;
+
+    }
+    
+
+    .section-subtag{
+        font-size: 13px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+        
+        
+
+    }
+    .left{
+        height: 20%;
+        margin-top: 85px;
+
+    }
+    .thumbnail img{
+        width: 110px;
+        border: 2px solid black;
+        border-radius: 26px;
+        margin: auto;
+    }
+    .text-big{
+        font-size: 40px;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    .text-small{
+        margin-top: 10px;
+    }
+    .nav-list li a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+        padding:5px 0;
+    }
+    .note{
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: oblique;
+        color: rgb(191, 248, 34);
+        padding: 10px;
+    }
+    .contact{
+        background-color: rgb(241, 231, 216);
+        height: 440px;
+        width: 100%;
+    }
+    .txt-area{
+        padding: 2px;
+        margin: auto;
+        height: 116px;
+        width: 60%;
+        position:static;
+    }
+    .con-btn{
+        margin: 15px 0 auto 19%;
+        background: none;
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 82px;
+        padding: 4px;
+        font-size: 15px;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        font-family: 'Ubuntu',sans-serif;
+    }
+
+    .s-half img{
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 216px;
+        display: block;
+        margin-top: 70px;
+    
+    
+    }
+
+} 

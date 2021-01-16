@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.logo{
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 54%;
+    border: 2px solid white;
+    border-radius: 110px;
+    margin: 4px 4px 4px 20px;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    z-index: 5;
+    
+}
+.nav-list{
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    width: 60%;
+    
+}
+.nav-list li{
+    list-style: none;
+    padding: 1px 10px;
+
+}
+.nav-list li a{
+    
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    padding-left: 31px;
+
+}
+.nav-list li a:hover{
+    
+    text-decoration: none;
+    color: rgb(182, 178, 178);
+
+}
+.right-nav{
+    
+    
+    /* background-color: yellow; */
+    width: 40%;
+    text-align: right;
+    padding: 0 11px
+    
+    
+}
+.inp-bar{
+    margin: auto;
+    width: 130px;
+}
+#search{
+    padding: 2px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: auto 0px;
+    width: 50%;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url("../img/background2.jpg");
+    background-size: cover;
+    background-blend-mode:normal;
+
+}
+.first-section{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.f-half{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+}
+.s-half {
+    width: 30%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.s-half img{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 216px;
+    display: block;
+    margin: auto;
+
+
+}
+
+
+.text-big{
+    
+    font-size: 43px;
+    margin: 35px 0 2px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* padding: 98px 0 3px 0; */
+
+}
+.hs{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px 0;
+}
+.text-small{
+    font-size: 19px;
+    margin-top: 10px;
+
+}
+.buttons{
+    margin: 6px 0;
+}
+.btn{
+    position: relative;
+
+    padding: 8px 17px;
+    margin: 18px 26px 0px 0px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* .btn:hover{
+    
+    padding: 8px 17px;
+    margin: 18px 26px 0px 0px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 20px;
+    background: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+} */
+.btn:first-child:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+
+}
+.btn:last-child:hover{
+    background: linear-gradient(90deg,#fa7199,#f5ce62,#e43603, #fa7199);
+    background-size: 400%;
+
+}
+.btn:first-child:before,
+.btn:last-child:before{
+    content: '';
+    position: absolute ;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 15px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+
+
+
+}
+.btn:first-child:hover:before,
+.btn:last-child:hover:before{
+    opacity: 1;
+    z-index: -125;
+
+
+}
+
+.btn:hover{
+    z-index: 1;
+    animation: glow 4s linear infinite;
+    color: black;
+    border:2px solid black;
+    font-size: 20px;
+
+}
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+
+.btn-sm{
+    padding: 4px;
+    vertical-align: middle;
+    margin: 10px 27px 10px 10px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
+.btn-sm:hover{
+    padding: 4px;
+    vertical-align: middle;
+    margin: 10px 27px 10px 10px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
+.section{
+    /* height: 295px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 52px;
+    font-family: 'Ubuntu', sans-serif;
+  
+}
+.left{
+ 
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0 26px;
+    /* margin-top: 36%; */
+    margin: auto;
+}
+
+.section-tag{
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    
+    
+}
+
+.section-subtag{
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* padding-bottom: 64px; */
+    /* margin-bottom: 178px; */
+}
+.thumbnail img{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 122px;
+}
+.sec{
+    margin: auto;
+    margin-top: 20px;
+
+}
+.size{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    
+    
+    text-align: center;
+    justify-content: center;
+}
+.note{
+    
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(191, 248, 34);
+    padding: 10px;
+    
+
+}
+
+.contact{
+    background-color: rgb(241, 231, 216);
+    height:500px;
+    
+    
+}
+.text-center{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+} 
+
+.con-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 16px auto;
+    
+    
+
+}
+.con-form-input{
+    width: 60%;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 13px auto;
+    padding: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.con-btn{
+
+    margin-left: 196px;
+    margin-top: 10px;
+
+
+    background: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 82px;
+    padding: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu',sans-serif;
+   
+}
+.txt-area{
+    padding: 2px;
+    margin: 5px 435.203px 0px 196.797px;
+    height: 166px;
+    width: 608px;
+    
+    
+    
+    
+    overflow:hidden;
+    
+    border:1px solid #ccc;
+    overflow-y:scroll;
+    resize: none;
+}
+.text-footer{
+    text-align: center;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 7px; */
+    color: white;
+    font-size: 14px;
+    
+} 
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+width: 33px;
+background-color: white;
+height: 4px;
+margin: 5px 5px; 
+}
+
+.sub-btn{
+    margin: auto;
+}
+
