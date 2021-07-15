@@ -82,7 +82,7 @@ html{
 .background{
     background: rgba(0, 0, 0, 0.7) url("../img/background2.jpg");
     background-size: cover;
-    background-blend-mode:normal;
+    background-blend-mode:screen;
 
 }
 .first-section{
@@ -117,7 +117,7 @@ html{
     border: 1px solid white;
     border-radius: 216px;
     display: block;
-    margin: auto;
+    margin: 2rem;
 
 
 }
@@ -311,7 +311,7 @@ html{
 
 .contact{
     background-color: rgb(241, 231, 216);
-    height:500px;
+    
     
     
 }
@@ -328,7 +328,7 @@ html{
     justify-content: center;
     flex-direction: column;
     max-width: 100%;
-    margin: 16px auto;
+    
     
     
 
@@ -344,10 +344,9 @@ html{
 }
 .con-btn{
 
-    margin-left: 196px;
-    margin-top: 10px;
+   
 
-
+    margin: 2rem;
     background: none;
     border: 2px solid grey;
     border-radius: 5px;
@@ -360,7 +359,7 @@ html{
    
 }
 .txt-area{
-    padding: 2px;
+    padding: 1rem;
     margin:0 3rem;
    
     

@@ -88,7 +88,7 @@
         
         background: rgba(0, 0, 0, 0.7) url("../img/background2.jpg");
         background-size: cover;
-        background-blend-mode:normal;
+        background-blend-mode:screen;
         
         
         width: 100%;
@@ -155,7 +155,7 @@
         position:static;
     }
     .con-btn{
-        margin: 15px 0 auto 19%;
+        margin:2rem;
         background: none;
         border: 2px solid grey;
         border-radius: 5px;
